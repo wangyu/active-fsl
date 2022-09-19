@@ -20,7 +20,7 @@ To reproduce SONYC-FSD-SED:
 4. Generate soundscapes from jams files by running the command. Set `annpaths` and `audiopath` to the extracted folders, and `savepath` to the desired path to save output audio files.
 ```
 python generate_soundscapes.py \
---audiopath PATH-TO-SONYC_FSD_SED.source \
+--sourcepath PATH-TO-SONYC_FSD_SED.source \
 --annpath PATH-TO-SONYC_FSD_SED.annotations \
 --savepath PATH-TO-SAVE-OUTPUT
 ```
@@ -29,7 +29,7 @@ Note that this will generate 465,467 audio files with a size of ~765GB to the fo
 5. If you also want to generate additional test data (used in the paper for the experiment of sampling window), change the `annpath`
 ```
 python generate_soundscapes.py \
---audiopath PATH-TO-SONYC_FSD_SED.source \
+--sourcepath PATH-TO-SONYC_FSD_SED.source \
 --annpath PATH-TO-SONYC_FSD_SED_add_test.annotations \
 --savepath PATH-TO-SAVE-OUTPUT
 ```
