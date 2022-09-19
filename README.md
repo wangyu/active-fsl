@@ -17,7 +17,7 @@ To reproduce SONYC-FSD-SED:
 - `occ_prob_per_cl.pkl`: Occurrence probability for each foreground sound class. 
 
 3. Install [Scaper](https://github.com/justinsalamon/scaper)
-4. Generate soundscapes from jams files by running the command. Set `annpaths` and `audiopath` to the extracted folders, and `savepath` to the desired path to save output audio files.
+4. Generate soundscapes from jams files by running the command. Set `annpaths` and `sourcepath` to the extracted folders, and `savepath` to the desired path to save output audio files.
 ```
 python generate_soundscapes.py \
 --sourcepath PATH-TO-SONYC_FSD_SED.source \
@@ -33,3 +33,4 @@ python generate_soundscapes.py \
 --annpath PATH-TO-SONYC_FSD_SED_add_test.annotations \
 --savepath PATH-TO-SAVE-OUTPUT
 ```
+This will generate 111,294 audio files with a size of ~191GB to the folder `SONYC_FSD_SED.audio` at the set `savepath`. These data represent another 1-year-worth of test data both in the past and future. 
