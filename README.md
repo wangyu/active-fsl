@@ -8,7 +8,7 @@ SONYC-FSD-SED is an open dataset of programmatically mixed audio clips that sim
 Due to the large size of the dataset, instead of releasing the raw audio files, we release the source material and soundscape annotations in JAMS format, which can be used to reproduce SONYC-FSD-SED using Scaper.
 
 To reproduce SONYC-FSD-SED:
-1. Download all files from Zenodo.
+1. Download all files from [Zenodo](https://zenodo.org/record/6392324#.YyjoO-zMLUI).
 2. Extract `.tar.gz` files. You will get
 - `SONYC_FSD_SED.source`: 96 SONYC backgrounds and 10,158 foreground sounds in `.wav` format, 2GB.
 - `SONYC_FSD_SED.annotations`: 465,467 annotation files, 57GB. 
@@ -33,4 +33,4 @@ python generate_soundscapes.py \
 --annpath PATH-TO-SONYC_FSD_SED_add_test.annotations \
 --savepath PATH-TO-SAVE-OUTPUT
 ```
-This will generate 111,294 audio files with a size of ~191GB to the folder `SONYC_FSD_SED.audio` at the set `savepath`. These data represent another 1-year-worth of test data both in the past and future. 
+This will generate 111,294 audio files with a size of ~191GB to the folder `SONYC_FSD_SED.audio` at the set `savepath`. These are additional 2-year-worth of test data (past year and future year). 
